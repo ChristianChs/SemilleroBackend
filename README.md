@@ -13,3 +13,29 @@ Deberá contar con los siguientes paquetes:
 # Pasos para la instalación
 
 A continuación se detalla el proceso:
+
+```bash
+git clone https://github.com/ChristianChs/SemilleroBackend.git
+cd SemilleroBackend
+npm install
+```
+
+Definir las variables de entorno (referencia `.env.example`)
+- Crear el archivo `.env` y establecer:
+
+```js
+PORT_SERVER=3001
+DB_NAME='database'
+DB_USER='root'
+DB_PWD='root'
+DB_HOST= localhost
+DB_PORT=3306
+DB_DIALECT = 'mysql'
+TOKEN_SECRET='secret'
+```
+
+
+Ejecutar el proyecto
+```bash
+npm run start
+```
